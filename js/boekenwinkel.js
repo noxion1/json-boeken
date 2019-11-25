@@ -145,21 +145,21 @@ let soortBookObj = {
 
             //create book title
             let title = document.createElement('h3');
-            title.className = 'bookSelection__title';
+            title.className = 'bookSelection__titel';
             title.textContent = reverseText(book.titel);
 
-            //add authors
+            //auteurs toevoegen
             let authors = document.createElement('p');
-            authors.className = 'bookSelection__authors';
+            authors.className = 'bookSelection__auteurs';
             book.auteur[0] = reverseText(book.auteur[0]);
             authors.textContent = maakOpsomming(book.auteur);
 
-            //add the prices
+            //prijs toevoegen
             let price = document.createElement('div');
-            price.className = 'bookSelection__price';
+            price.className = 'bookSelection__prijs';
             price.textContent = '€ ' + book.prijs;
 
-            //Add the element
+            //elementen toevoegen
             section.appendChild(image);
             main.appendChild(title);
             main.appendChild(authors);

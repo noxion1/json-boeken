@@ -1,3 +1,5 @@
+body{ font-family: sans-serif;}
+
 .bookSelection__cover {
     width: 100px;
 }
@@ -21,6 +23,25 @@ background-color: #def;
     margin-bottom: 1em;
 }
 
+.bookSelection:nth-child(even){
+  background-color: #eee;
+}
+
+.bookSelection__title {
+  margin: 0;
+}
+
+.bookSelection__main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: .5em 0;
+}
+
 .bookSelection__price {
     font-size: 2em;
+    padding: .5em;
+}
+
+@@media screen and (min-width: 60em) {
+
 }
