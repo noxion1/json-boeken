@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>json sorteren</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1>Een selectie van boeken</h1>
+    <select id="kenmerk">
+        <option value="titelUpper" selected>titel</option>
+        <option value="sortAuthor">auteur(s)</option>
+        <option value="jsDatum">datum uitgave</option>
+        <option value="paginas">aantal bladzijden</option>
+        <option value="taal">taal</option>
+        <option value="prijs">prijs</option>
+    </select>
+
+    <label><input type="radio" name="oplopend" value="1">oplopend</label>
+    <label><input type="radio" name="oplopend" value="-1">aflopend</label>
+
+    <div id="uitvoer"></div>
+
+    <script src="js/boekenwinkel.js"></script>
+    </body>
+</html>
