@@ -27,7 +27,7 @@ background-color: #def;
   background-color: #eee;
 }
 
-.bookSelection__title {
+.bookSelection__titel {
   margin: 0;
 }
 
@@ -37,7 +37,7 @@ background-color: #def;
   padding: .5em 0;
 }
 
-.bookSelection__price {
+.bookSelection__prijs {
     font-size: 2em;
     padding: .5em;
 }

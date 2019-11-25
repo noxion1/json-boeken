@@ -133,38 +133,38 @@ let soortBookObj = {
             let section = document.createElement('section');
             section.className = 'bookSelection';
 
-            //main element with all the info except the price and cover
+            //main element with all the info except the prijs and cover
             let main = document.createElement('main');
             main.className = 'bookSelection__main';
 
             //create book cover
-            let image = document.createElement('img');
-            image.className = 'bookSelection__cover';
-            image.setAttribute('src', book.cover);
-            image.setAttribute('alt', reverseText(book.titel));
+            let afbeelding = document.createElement('img');
+            afbeelding.className = 'bookSelection__cover';
+            afbeelding.setAttribute('src', book.cover);
+            afbeelding.setAttribute('alt', reverseText(book.titel));
 
-            //create book title
-            let title = document.createElement('h3');
-            title.className = 'bookSelection__titel';
-            title.textContent = reverseText(book.titel);
+            //create book titel
+            let titel = document.createElement('h3');
+            titel.className = 'bookSelection__titel';
+            titel.textContent = reverseText(book.titel);
 
             //auteurs toevoegen
-            let authors = document.createElement('p');
-            authors.className = 'bookSelection__auteurs';
+            let auteur = document.createElement('p');
+            auteur.className = 'bookSelection__auteurs';
             book.auteur[0] = reverseText(book.auteur[0]);
-            authors.textContent = maakOpsomming(book.auteur);
+            auteur.textContent = maakOpsomming(book.auteur);
 
             //prijs toevoegen
-            let price = document.createElement('div');
-            price.className = 'bookSelection__prijs';
-            price.textContent = '€ ' + book.prijs;
+            let prijs = document.createElement('div');
+            prijs.className = 'bookSelection__prijs';
+            prijs.textContent = '€ ' + book.prijs;
 
             //elementen toevoegen
-            section.appendChild(image);
-            main.appendChild(title);
-            main.appendChild(authors);
+            section.appendChild(afbeelding);
+            main.appendChild(titel);
+            main.appendChild(auteur);
             section.appendChild(main);
-            section.appendChild(price);
+            section.appendChild(prijs);
             document.getElementById('uitvoer').appendChild(section);
         });
 

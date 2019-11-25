@@ -108,10 +108,10 @@ let sortBookObj = {
 
             let coverImg = "<img src='" + data[i].cover + "' class='bookSelection__cover' alt='" + data[i].titel + "'>";
 
-            let authors = maakOpsomming(data[i].auteur);
+            let auteur = maakOpsomming(data[i].auteur);
             uitvoer += makeTableRow(
                 [data[i].titel,
-                authors,
+                auteur,
                 coverImg,
                 data[i].uitgave,
                 data[i].paginas,
